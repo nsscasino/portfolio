@@ -1,143 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Now Serving Web</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Now Serving Web — Nick Rocha</title>
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background-color: #1a1a1a;
+      background: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
       color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 40px 20px;
       min-height: 100vh;
     }
-
     .container {
-      background: rgba(0, 0, 0, 0.75);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-radius: 24px;
-      padding: 3rem 2rem;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(16px);
+      border-radius: 20px;
+      padding: 40px;
+      width: 90%;
       max-width: 700px;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     }
-
     .logo {
-      width: 100px;
-      margin-bottom: 1.5rem;
+      text-align: center;
+      margin-bottom: 30px;
     }
-
+    .logo img {
+      width: 120px;
+    }
     h1 {
-      font-size: 2.4rem;
-      margin-bottom: 0.5rem;
-      font-weight: 700;
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 10px;
     }
-
-    p {
-      font-size: 1rem;
-      opacity: 0.85;
-      margin-bottom: 2rem;
-    }
-
-    section {
-      text-align: left;
-      margin-top: 2rem;
-    }
-
-    section h2 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 0.6rem;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 1rem;
-    }
-
-    ul li {
-      position: relative;
-      padding-left: 1rem;
-      margin-bottom: 0.4rem;
-      font-size: 0.95rem;
-    }
-
-    ul li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
+    h2 {
       color: #ffffff;
-      font-size: 1.2rem;
+      margin-top: 30px;
     }
-
-    .contact {
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      margin-top: 2.5rem;
-      padding-top: 1.5rem;
+    p, li {
+      line-height: 1.6;
+      color: #ffffff;
     }
-
-    .contact p {
-      margin-top: 1rem;
-      font-size: 0.95rem;
-      opacity: 0.85;
+    ul {
+      padding-left: 20px;
+    }
+    .email {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="nsw-logo-orange.png" alt="NSW Logo" class="logo"/>
-    <h1>Now Serving Web</h1>
-    <p>Web & SEO services with flavor. Built by Nick Rocha.</p>
-
-    <section>
-      <h2>What I Do</h2>
-      <ul>
-        <li>Custom websites for creatives, businesses, and brands</li>
-        <li>SEO setups that actually drive traffic</li>
-        <li>Fast landing pages and mobile optimization</li>
-        <li>Simple eCommerce & booking solutions</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projects I've Built</h2>
-      <ul>
-        <li>AI Note-Taker web app (audio, formatting, saving)</li>
-        <li>FeetFinder profile management system</li>
-        <li>Web & SEO for tattoo studios</li>
-        <li>Funny and pop-culture merch store (AfkTEEs)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Skills & Tools I Use</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript, Firebase</li>
-        <li>SEO best practices, Google Search Console</li>
-        <li>Shopify, Canva, Photoshop, Meta Ads</li>
-        <li>GitHub, Git, Hosting with GitHub Pages</li>
-      </ul>
-    </section>
-
-    <div class="contact">
-      <h2>Contact Me for a Quote</h2>
-      <p>Send a DM or email with your idea — quick builds or full projects welcome. Let's make it real.</p>
+    <div class="logo">
+      <img src="logo.png" alt="Now Serving Web Logo" />
     </div>
+    <h1>Nick Rocha</h1>
+    <p style="text-align:center; font-weight: 500; font-size: 1.1em;">Website Developer • SEO Strategist • UX Focused Builder</p>
+
+    <h2>What I Do</h2>
+    <p>I build fast, modern websites with a focus on clean design and search engine visibility. Whether it's launching a business, improving a local SEO footprint, or building internal tools — I help bring ideas to life online.</p>
+
+    <h2>Recent Work</h2>
+    <ul>
+      <li><strong>Seven Tattoo LV</strong> — <code>seventattoolv.com</code><br>Shopify-based tattoo studio website with mobile optimization and dark/light branding polish.</li>
+      <li><strong>Seven Piercing LV</strong> — <code>sevenpiercinglv.square.site</code><br>Square Online store configured for piercing bookings, clean visuals, and easy client scheduling.</li>
+      <li><strong>AI Note-Taker</strong> (Personal Project)<br>Browser app with real-time speech-to-text, formatting toolbar, and localStorage support — built for productivity nerds.</li>
+    </ul>
+
+    <h2>Services</h2>
+    <ul>
+      <li>Custom Website Design & Development</li>
+      <li>Local SEO Optimization</li>
+      <li>Shopify & Square Online Setup</li>
+      <li>Mobile Optimization</li>
+      <li>Performance & UX Tuning</li>
+    </ul>
+
+    <p class="email">📩 Contact for quote.<br>Email: <a href="mailto:nsscasino@gmail.com" style="color: #ffffff;">nsscasino@gmail.com</a></p>
   </div>
 </body>
 </html>
-
