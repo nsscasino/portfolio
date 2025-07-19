@@ -3,106 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nick Rocha | Web & SEO</title>
-  <!-- updated email contact -->
+  <title>NSW — Now Serving Web</title>
   <style>
+    /* ====== Theme ====== */
     :root {
-      --bg: #f8f8f8;
-      --glass: rgba(255, 255, 255, 0.2);
-      --blur: blur(16px);
+      --bg: #0d0d0d;
+      --panel: rgba(255, 255, 255, 0.05);
+      --blur: blur(20px);
       --border: rgba(255, 255, 255, 0.15);
-      --text: #111;
-      --accent: #000;
+      --text: #f4f4f4;
+      --accent: #ff9100; /* neon orange */
+      --radius: 22px;
     }
 
+    /* ====== Base ====== */
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 4rem 1rem;
+      padding: 5rem 1rem;
     }
 
-    .container {
-      max-width: 900px;
+    .card {
+      max-width: 960px;
       width: 100%;
-      background: var(--glass);
+      background: var(--panel);
       backdrop-filter: var(--blur);
       border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 2rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border-radius: var(--radius);
+      padding: 3rem 2.5rem;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
     }
 
-    h1, h2 {
-      margin-top: 0;
+    /* ====== Header ====== */
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
     }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
+    .brand img {
+      width: 90px;
+      height: auto;
     }
-
-    .project, .section {
-      margin-bottom: 2rem;
-    }
-
-    .email {
-      margin-top: 2rem;
-      font-weight: bold;
-    }
-
-    .projects {
+    .brand-title {
       display: flex;
       flex-direction: column;
-      gap: 1.5rem;
+      line-height: 1.1;
+    }
+    .brand-title span:first-child {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    .brand-title span:last-child {
+      font-size: 0.9rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 0.25rem;
+    }
+
+    /* ===== Sections ===== */
+    h2 { margin-top: 2.5rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 1rem; }
+
+    .project {
+      margin-bottom: 1.75rem;
+    }
+    .project img {
+      max-width: 320px;
+      border-radius: 10px;
+      margin-top: .75rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.45);
+    }
+
+    .cta {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .cta a {
+      display: inline-block;
+      padding: 0.9rem 1.8rem;
+      border: 2px solid var(--accent);
+      border-radius: 50px;
+      font-weight: 600;
+      color: var(--text);
+      transition: all 0.25s ease;
+    }
+    .cta a:hover {
+      background: var(--accent);
+      color: #000;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Nick Rocha</h1>
-    <p>Website Developer • SEO Strategist • UX Focused Builder</p>
-
-    <div class="section">
-      <h2>What I Do</h2>
-      <p>I build fast, modern websites with a focus on clean design and search engine visibility. Whether it's launching a business, improving a local SEO footprint, or building internal tools — I help bring ideas to life online.</p>
-    </div>
-
-    <div class="section">
-      <h2>Recent Work</h2>
-      <div class="projects">
-        <div class="project">
-          <strong>Seven Tattoo LV</strong> — <a href="https://seventattoolv.com" target="_blank">seventattoolv.com</a>
-          <p>Shopify-based tattoo studio website with mobile optimization and dark/light branding polish.</p>
-        </div>
-        <div class="project">
-          <strong>Seven Piercing LV</strong> — <a href="https://sevenpiercinglv.square.site" target="_blank">sevenpiercinglv.square.site</a>
-          <p>Square Online store configured for piercing bookings, clean visuals, and easy client scheduling.</p>
-        </div>
-        <div class="project">
-          <strong>AI Note-Taker (Personal Project)</strong>
-          <p>Browser app with real-time speech-to-text, formatting toolbar, and localStorage support — built for productivity nerds.</p>
-        </div>
+  <div class="card">
+    <!-- Brand Header -->
+    <div class="brand">
+      <img src="nsw-logo-orange.png" alt="NSW Logo" />
+      <div class="brand-title">
+        <span>NSW</span>
+        <span>Now Serving Web</span>
       </div>
     </div>
 
-    <div class="section">
-      <h2>Services</h2>
-      <ul>
-        <li>Custom Website Design & Development</li>
-        <li>Local SEO Optimization</li>
-        <li>Shopify & Square Online Setup</li>
-        <li>Mobile Optimization</li>
-        <li>Performance & UX Tuning</li>
-      </ul>
-      <p>📩 <strong>Contact for quote.</strong></p>
+    <!-- Intro -->
+    <p>Future‑facing web &amp; SEO studio crafting minimal, high‑impact digital experiences.</p>
+
+    <!-- Projects -->
+    <h2>Recent Work</h2>
+    <div class="project">
+      <strong>Seven Tattoo LV</strong> — <a href="https://seventattoolv.com" target="_blank">seventattoolv.com</a>
+      <p>Shopify‑based tattoo studio site with responsive UX and conversion‑focused booking flow.</p>
     </div>
 
-    <p class="email">Email: <a href="mailto:nsscasino@gmail.com">nsscasino@gmail.com</a></p>
+    <div class="project">
+      <strong>Seven Piercing LV</strong> — <a href="https://sevenpiercinglv.square.site" target="_blank">sevenpiercinglv.square.site</a>
+      <p>Square Online storefront for piercing services, optimized for mobile scheduling.</p>
+    </div>
+
+    <div class="project">
+      <strong>AI Note‑Taker (Personal Project)</strong>
+      <p>Browser app featuring live speech‑to‑text, formatting toolbar, and local storage for on‑the‑go productivity.</p>
+      <img src="ai-note-taker-thumbnail.png" alt="AI Note‑Taker Screenshot" />
+    </div>
+
+    <!-- Services -->
+    <h2>Services</h2>
+    <ul>
+      <li>Custom Website Design &amp; Development</li>
+      <li>Local &amp; Technical SEO Optimization</li>
+      <li>Shopify / Square Online Setup</li>
+      <li>Performance &amp; UX Tuning</li>
+      <li>AI‑powered Site Tools &amp; Integrations</li>
+    </ul>
+
+    <!-- CTA -->
+    <div class="cta">
+      <a href="mailto:nsscasino@gmail.com">Request a Quote</a>
+    </div>
   </div>
 </body>
 </html>
