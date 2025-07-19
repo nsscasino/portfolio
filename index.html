@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nick Rocha | NSW Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>NSW Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -16,126 +14,111 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #9f6eed, #6bc6ff);
       color: #ffffff;
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 2rem;
-      overflow: hidden;
-      animation: backgroundShift 20s ease infinite;
+      background: linear-gradient(135deg, #ffffff, #000000, #cccccc, #ff8c00, #87cefa);
+      background-size: 500% 500%;
+      animation: gradientShift 20s ease infinite;
     }
 
-    @keyframes backgroundShift {
+    @keyframes gradientShift {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
 
     .container {
-      background: rgba(0, 0, 0, 0.75);
-      backdrop-filter: blur(20px);
-      border-radius: 16px;
-      padding: 3rem 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      padding: 40px;
+      border-radius: 20px;
       max-width: 700px;
       width: 100%;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      text-align: center;
     }
 
     .logo {
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-
-    .logo img {
-      height: 120px;
+      max-width: 130px;
+      margin: 0 auto 20px;
+      display: block;
     }
 
     h1 {
       font-size: 2rem;
-      text-align: center;
       font-weight: 700;
       margin-bottom: 0.5rem;
     }
 
-    .subtitle {
-      text-align: center;
+    p.subtitle {
       font-size: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    section {
       margin-bottom: 2rem;
     }
 
     h2 {
       font-size: 1.25rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
       font-weight: 600;
-      margin-bottom: 0.75rem;
     }
 
     ul {
-      list-style: disc inside;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
       line-height: 1.6;
     }
 
-    a {
-      color: #ffffff;
-      text-decoration: underline;
+    .contact {
+      margin-top: 2rem;
+      font-size: 0.95rem;
     }
 
-    .contact {
-      text-align: center;
-      font-size: 1rem;
-      margin-top: 2rem;
+    .contact span {
+      display: block;
+      margin-bottom: 5px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="logo">
-      <img src="nsw-logo.png" alt="NSW Logo">
-    </div>
+    <img src="nsw-logo.png" alt="NSW Logo" class="logo" />
     <h1>Nick Rocha</h1>
-    <div class="subtitle">Website Developer • SEO Strategist • UX Focused Builder</div>
+    <p class="subtitle">Website Developer • SEO Strategist • UX Focused Builder</p>
 
-    <section>
-      <h2>What I Do</h2>
-      <ul>
-        <li>I build fast, modern websites with a focus on clean design and search engine visibility.</li>
-        <li>Launch businesses, improve local SEO, and build internal tools — I help bring ideas to life online.</li>
-      </ul>
-    </section>
+    <h2>What I Do</h2>
+    <ul>
+      <li>I build fast, modern websites with a focus on clean design and search engine visibility.</li>
+      <li>Launch businesses, improve local SEO, and build internal tools — I help bring ideas to life online.</li>
+    </ul>
 
-    <section>
-      <h2>Recent Work</h2>
-      <ul>
-        <li><strong>Seven Tattoo LV</strong> — <a href="https://seventattoolv.com" target="_blank">seventattoolv.com</a><br>
-        Shopify-based tattoo studio website with mobile optimization and dark/light branding polish.</li>
+    <h2>Recent Work</h2>
+    <ul>
+      <li><strong>Seven Tattoo LV</strong> — seventattoolv.com<br/>Shopify-based tattoo studio website with mobile optimization and dark/light branding polish.</li>
+      <li><strong>Seven Piercing LV</strong> — sevenpiercinglv.square.site<br/>Square Online store for piercing bookings, clean visuals, and client scheduling.</li>
+      <li><strong>AI Note-Taker</strong> (Personal Project)<br/>Browser app with real-time speech-to-text, formatting toolbar, and localStorage support — built for productivity nerds.</li>
+    </ul>
 
-        <li><strong>Seven Piercing LV</strong> — <a href="https://sevenpiercinglv.square.site" target="_blank">sevenpiercinglv.square.site</a><br>
-        Square Online store for piercing bookings, clean visuals, and client scheduling.</li>
-
-        <li><strong>AI Note-Taker</strong> (Personal Project)<br>
-        Browser app with real-time speech-to-text, formatting toolbar, and localStorage support — built for productivity nerds.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Services</h2>
-      <ul>
-        <li>Custom Website Design & Development</li>
-        <li>Local SEO Optimization</li>
-        <li>Shopify & Square Online Setup</li>
-        <li>Mobile Optimization</li>
-        <li>Performance & UX Tuning</li>
-      </ul>
-    </section>
+    <h2>Services</h2>
+    <ul>
+      <li>Custom Website Design & Development</li>
+      <li>Local SEO Optimization</li>
+      <li>Shopify & Square Online Setup</li>
+      <li>Mobile Optimization</li>
+      <li>Performance & UX Tuning</li>
+    </ul>
 
     <div class="contact">
-      <p>📩 Contact for quote.</p>
-      <p>Email: <a href="mailto:nsscasino@gmail.com">nsscasino@gmail.com</a></p>
+      <span>📩 Contact for quote.</span>
+      <span>Email: nsscasino@gmail.com</span>
     </div>
   </div>
 </body>
