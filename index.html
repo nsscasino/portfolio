@@ -2,87 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Now Serving Web — Nick Rocha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nick Rocha | Now Serving Web</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
+      font-family: "Inter", sans-serif;
       background: #ffffff;
-      font-family: 'Segoe UI', sans-serif;
       color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
     }
-    .container {
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(16px);
+    .card {
+      background: #000000cc;
+      backdrop-filter: blur(18px) saturate(180%);
+      padding: 2rem;
       border-radius: 20px;
-      padding: 40px;
-      width: 90%;
       max-width: 700px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
     .logo {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .logo img {
-      width: 120px;
+      display: block;
+      margin: 0 auto 1.5rem;
+      max-width: 180px;
     }
     h1 {
       text-align: center;
-      font-size: 2em;
-      margin-bottom: 10px;
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
     }
     h2 {
-      color: #ffffff;
-      margin-top: 30px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
     }
-    p, li {
-      line-height: 1.6;
-      color: #ffffff;
+    section {
+      margin-bottom: 1.5rem;
+    }
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #ffffff33;
+      padding-bottom: 0.3rem;
     }
     ul {
-      padding-left: 20px;
+      padding-left: 1.2rem;
     }
-    .email {
-      margin-top: 20px;
+    li {
+      margin-bottom: 0.4rem;
+    }
+    .contact {
       text-align: center;
-      font-weight: bold;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="logo">
-      <img src="logo.png" alt="Now Serving Web Logo" />
-    </div>
+  <div class="card">
+    <img src="nsw-logo.png" alt="Now Serving Web Logo" class="logo" />
     <h1>Nick Rocha</h1>
-    <p style="text-align:center; font-weight: 500; font-size: 1.1em;">Website Developer • SEO Strategist • UX Focused Builder</p>
+    <h2>Website Developer • SEO Strategist • UX Focused Builder</h2>
 
-    <h2>What I Do</h2>
-    <p>I build fast, modern websites with a focus on clean design and search engine visibility. Whether it's launching a business, improving a local SEO footprint, or building internal tools — I help bring ideas to life online.</p>
+    <section>
+      <h3>What I Do</h3>
+      <ul>
+        <li>Build fast, modern websites with clean design</li>
+        <li>Boost search engine visibility through SEO</li>
+        <li>Launch online brands and internal tools</li>
+      </ul>
+    </section>
 
-    <h2>Recent Work</h2>
-    <ul>
-      <li><strong>Seven Tattoo LV</strong> — <code>seventattoolv.com</code><br>Shopify-based tattoo studio website with mobile optimization and dark/light branding polish.</li>
-      <li><strong>Seven Piercing LV</strong> — <code>sevenpiercinglv.square.site</code><br>Square Online store configured for piercing bookings, clean visuals, and easy client scheduling.</li>
-      <li><strong>AI Note-Taker</strong> (Personal Project)<br>Browser app with real-time speech-to-text, formatting toolbar, and localStorage support — built for productivity nerds.</li>
-    </ul>
+    <section>
+      <h3>Recent Work</h3>
+      <ul>
+        <li><strong>Seven Tattoo LV</strong> — <em>seventattoolv.com</em></li>
+        <li><strong>Seven Piercing LV</strong> — <em>sevenpiercinglv.square.site</em></li>
+        <li><strong>AI Note-Taker (Personal Project)</strong> — Real-time speech-to-text web app</li>
+      </ul>
+    </section>
 
-    <h2>Services</h2>
-    <ul>
-      <li>Custom Website Design & Development</li>
-      <li>Local SEO Optimization</li>
-      <li>Shopify & Square Online Setup</li>
-      <li>Mobile Optimization</li>
-      <li>Performance & UX Tuning</li>
-    </ul>
+    <section>
+      <h3>Services</h3>
+      <ul>
+        <li>Custom Website Design & Development</li>
+        <li>Local SEO Optimization</li>
+        <li>Shopify & Square Online Setup</li>
+        <li>Mobile Optimization</li>
+        <li>Performance & UX Tuning</li>
+      </ul>
+    </section>
 
-    <p class="email">📩 Contact for quote.<br>Email: <a href="mailto:nsscasino@gmail.com" style="color: #ffffff;">nsscasino@gmail.com</a></p>
+    <div class="contact">
+      <p>📩 <strong>Contact for a quote</strong></p>
+      <p>Email: <a href="mailto:nsscasino@gmail.com" style="color: #fff;">nsscasino@gmail.com</a></p>
+    </div>
   </div>
 </body>
 </html>
